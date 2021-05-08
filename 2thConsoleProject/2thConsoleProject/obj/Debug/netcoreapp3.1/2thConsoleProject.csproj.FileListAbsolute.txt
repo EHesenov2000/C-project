@@ -1,0 +1,13 @@
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\bin\Debug\netcoreapp3.1\2thConsoleProject.exe
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\bin\Debug\netcoreapp3.1\2thConsoleProject.deps.json
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\bin\Debug\netcoreapp3.1\2thConsoleProject.runtimeconfig.json
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\bin\Debug\netcoreapp3.1\2thConsoleProject.runtimeconfig.dev.json
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\bin\Debug\netcoreapp3.1\2thConsoleProject.dll
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\bin\Debug\netcoreapp3.1\2thConsoleProject.pdb
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.csprojAssemblyReference.cache
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.AssemblyInfoInputs.cache
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.AssemblyInfo.cs
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.csproj.CoreCompileInputs.cache
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.dll
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.pdb
+C:\Users\elman\Desktop\2thConsoleProject\2thConsoleProject\obj\Debug\netcoreapp3.1\2thConsoleProject.genruntimeconfig.cache

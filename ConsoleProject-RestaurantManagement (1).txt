@@ -1,0 +1,66 @@
+Restoran sifaris sistemi
+ Restorandaki sifarislerin idare edilmesi ucun proqram
+
+ MenuItem class -  Menyudaki her bir item-in (menyudaki yemek,icki,desertler ve s) asagidaki memberleri var:
+  - No - nomresi (S100,DR101,DE102,ve s)
+  - Name - ad
+  - Price - qiymet
+  - Category - Kateqoriyasi (sup,ana yemek,icki,desert ve s.)
+
+ Order - Her bir sifarisin asagidaki memberleri var:
+  - No - nomresi (1-den baslayaraq nomrelenir)
+  - OrderItems- Sifaris item-lari sifaris item listi)
+  - TotalAmount - umumi meblegi
+  - Date - tarixi
+
+ OrderItem - Her bir sifaris item-inin asagoidaki memberleri var:
+  - MenuItem- sifaris olunan mehsul
+  - Count- sifaris sayi
+
+IRestaurantManager
+
+ - MenuItems - restorandaki menu item-lari
+ - Orders - restorana edilmis sifarisler
+ - AddOrder - Sifaris (Order) elave etmek - order elave edilerken hansi MenuItem-larindan hansi sayda satis oldugu gonderilir
+ - RemoveOrder - Sifarisin geri qaytarilmasi
+ - GetOrdersByDatesInterval - Verilen tarix araligina gore hemin tarix araligina olan sifarislerin qaytarilmasi
+ - GetOrderByDate - Verilen bir tarixe gore hemin tarix (il,ay,gun) ucun olan sifarislerin qaytarilmasi
+ - GetOrdersByPriceInterval - Verilmis mebleg araligina gore edilmis satislarin qaytarilmasi
+ - GetOrderByNo - Verilmis nomreye esasen satisin qaytarilmasi
+ - AddMenuItem - Yeni menuItem (yemek,icki,desser ve s.) elave etmek
+ - EditMenuITem - Mehsulun adini,sayini ve meblegini,categoriyasini deyismek (code-a gore tapilacaq)
+ - Verilmis kateqoriyaya esasen hemin kateqoriyada olan menuItem-larin qaytarilmasi
+ - Verilmis qiymet araligina esasen hemin araliqda olan menuItemlerin qaytarilmasi
+ - Verilmis search deyerine esasen menuItem-larin search edilib qaytarilmasi
+
+
+Proses:
+
+1.
+   ekrana 3 secim cixir
+    -1 Menu uzerinde emeliyyat aparmaq
+    -2 Sifarisler uzerinde emeliyyat aparmaq
+    -0 Sistemden cixmaq
+	
+1.1 1 secildikde Mehsullar uzerinde aparila bilinecek emeliyyatlarla bagli secimler gosterilir:
+    
+    - 1 Yeni item elave et  - user-den yeni menu item yaradilmasi ucun lazim olan melumatlari daxil edilmelidir
+    - 2 Item uzerinde duzelis et -  duzelis edilecek mehsulun code-u ve duzelis melumatlari daxil edilmelidir
+    - 3 Item sil - Item nomresi daxil edilmelidir
+    - 4 Butun Item-lari goster - butun itemlar gosterilecek (nomresi,adi,categoriyasi,qiymeti)
+    - 5 Categoriyasina gore menu item-lari goster - usere var olan kateqoriyalar gosteilecek ve onlar arasinda bir secim etmelidir ve secilmis kateqoriyadan olan butun menu item-lar gosterilir (nomresi, adi,categoriyasi,qiymeti)
+    - 6 Qiymet araligina gore menu item-lar goster - userden minmum ve maximum qiymetleri daxil etmesi istenilir ve hemin qiymet araliginda olan meni itemlar gosterilir (Nomresi, adi,categoriyasi,qiymeti)
+    - 7 Menu item-lar arasinda ada gore axtaris et (search) - userden text daxil etmesi istenilir ve adinda hemin text olan butun menu item-lar gosterilir (nomresi, adi,categoriyasi,qiymeti)
+    - 0 Evveli menuya qayit
+    
+1.2 2 secildikde sifarisler uzerinde aparila bilinecek emeliyyatlarla bagli secimler gosterilir:
+    
+    - 1 Yeni sifaris elave etmek - istifadeciden sifairis yaradilmasi ucun lazimi meulatlarin daxil edilmesi istenilir (menu item-larin nomreleri ve saylari)
+    - 2 Sifarisin legvi - sifaris nomresine esasen silinmesi
+    - 3 Butun sifarislerin ekrana cixarilmasi (nomresi,meblegi,menu item sayi,tarixi - (burdad misalcun 4 cola,2 pizza sifaris verilibse menu item sayi kimi 6 gosterilsin))
+    - 4 Verilen tarix araligina gore sifarislrein gosterilmesi - userden qebul edilen iki tarix araligindaki sifarislerin gosterilmesi (nomresi,meblegi,menu item sati,tarixi)
+    - 5 Verilen mebleg araligina gore sifarislerin gosterilmesi - userden qebul edilen iki mebleg araligindaki sifarislerin gosterilmesi (nomresi,meblegi,menu item sayi,tarixi)
+    - 6 Verilmis bir tarixde olan sifarislerin gosterilmesi  - userden qebul edilmis bir tarixde olan sifarislerin gosterilmesi(nomresi,meblegi,menu item sayi,tarixi)
+    - 7 Verilmis nomreye esasen hemin nomreli sifarisin melumatlarinin gosterilmesi - userden qebul edilmis nomreye esasen hemin nomreli sifarisin melumatlarinin gosterilmesi (nomresi,meblegi,menu item sayi,tarixi, sifaris itemlari (nomresi,adi,sayi))
+    - 0 Evveli menuya qayit
+
